@@ -1,0 +1,30 @@
+import java.util.*;
+class Main {
+    public static void main (String[] args) {
+      	ArrayList<Integer> a = new ArrayList<>();
+        a.add(1);
+      	a.add(2);
+      	a.add(3);
+      	a.add(4);
+      	a.add(5);
+      	a.add(6);
+      	a.add(7);
+      	a.add(8);
+      	a.add(9);
+      	a.add(10);
+      	System.out.println(a);
+      	int l=0;
+      	int s=0;
+      	for(int i =0;i<a.size()-1; i++){
+      	    if(a.get(i) > l) {
+      	        l=a.get(i);
+      	    }
+      	    else{
+      	        s=a.get(i);
+      	    }
+      	}
+      	
+      	System.out.println(l);
+      	System.out.println(s);
+    }
+}
